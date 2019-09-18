@@ -1,0 +1,299 @@
+body {
+	font-family: "PTSans", Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.grey-back {
+  width: 1280px;
+  background-color: #f2f2f2;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.white-back {
+  width: 1200px;
+  box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+  background-color: #ffffff;
+  text-transform: uppercase;
+}
+
+.index-back {
+  background-image: url("../img/background-photo.jpg");
+  background-repeat: no-repeat;
+  background-color: #f2f2f2;
+}
+
+.hotel-back {
+  background-image: url("../img/filter-background.jpg");
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+}
+
+.nav-item {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 26px;
+	list-style: none;
+}
+
+.nav-item a:hover,
+.nav-item a:focus {
+  color: #81b3d2;
+}
+
+.nav-item a:activate {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.nav-item-inactive {
+  color: #766357;
+}
+
+.intro-section {
+	background-color: white;
+	text-align: center;
+}
+
+.intro-section h2 {
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 26px;
+}
+
+.intro-section p {
+	font-size: 14px;
+	color: #333333;
+}
+
+.blue-back {
+  width: 400px;
+  background-color: #81b3d2;
+  text-align: center;
+  line-height: 21px;
+  color: white;
+}
+
+.blue-back h2{
+	font-size: 21px;
+}
+
+.blue-back p {
+	font-size: 14px;
+}
+
+.features {
+	line-height: 21px;
+	text-align: center;
+}
+
+.features-list {
+	list-style: none;
+}
+
+.features-item h2 {
+	font-size: 21px;
+}
+
+.features-item p {
+	font-size: 14px;
+	color: #333333;
+}
+
+.grey-box {
+	background-color: #eeeeee;
+}
+
+.hotel-order-intro {
+  text-align: center;
+}
+
+.hotel-order-intro h2 {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.hotel-order-intro p {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.order-form {
+  display: none;
+}
+
+.hashtag {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.socials {
+  list-style: none;
+}
+
+.socials-icon {
+  background-color: #81b3d2;
+}
+
+.socials-icon:hover,
+.socials-icon:focus {
+  background-color: #669ec0;
+}
+
+.socials-icon:active {
+  background-color: #5496bd;
+}
+
+.creator {
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.filter-form {
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.filter-form legend,
+.filter-form p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.filter-form li {
+  list-style: none;
+  font-size: 14px;
+}
+
+.filter-form button {
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.filter-form button:hover,
+.filter-form button:focus {
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+  font-size: 14px;
+  color: #000000;
+}
+
+.search-result {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  color: #000000;
+}
+
+.sort {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort-button {
+  background-color: transparent;
+  border: none;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort-active {
+  color: #81b3d2;
+}
+
+.sort-inactive {
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: underline;
+}
+
+.sort-inactive:hover,
+.sort-inactive:focus {
+  color: #81b3d2;
+}
+
+.sort-inactive:active {
+  color: #000000;
+  text-decoration: none;
+}
+
+.sort-dir-active {
+  background-color: #81b3d2;
+}
+
+.sort-dir-inactive {
+  background-color: #cacaca;
+}
+
+.blue-button {
+  background-color: #81b3d2;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.blue-button:hover,
+.blue-button:focus {
+  background-color: #669ec0;
+}
+
+.blue-button:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.brown-button {
+  background-color: #766357;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.brown-button:hover,
+.brown-button:focus {
+  background-color: #604e43;
+}
+
+.brown-button:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.rating-back {
+  background-color: #f2f2f2;
+  color: #666666;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.type-and-price {
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.hotel-info h2 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.hotel-info h2:hover,
+.hotel-info h2:focus {
+  color: #81b3d2;
+}
+
+.hotel-info h2:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.hotel-info li {
+  list-style: none;
+}
