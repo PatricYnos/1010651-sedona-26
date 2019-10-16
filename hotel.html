@@ -8,23 +8,23 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="base-hotel">
+  <div class="container">
     <header>
       <nav>
-        <a href="index.html">
-          <img class="logo" src="img/logo-sedona.svg" width="140" height="71" alt="">
+        <a class="logo" href="index.html">
+          <img src="img/logo-sedona.svg" width="140" height="71" alt="">
         </a>
         <ul class="navigation">
-          <li class="nav-left-side">
+          <li>
             <a href="info.html">Информация</a>
           </li>
-          <li class="nav-left-side">
+          <li>
             <a href="photo.html">Фото и видео</a>
           </li>
-          <li class="nav-right-side">
+          <li>
             <a href="map.html">Карта штата</a>
           </li>
-          <li class="nav-right-side current-page">
+          <li class="current-page">
             Гостиницы
           </li>
         </ul>
@@ -94,8 +94,8 @@
       <section class="search-result">
         <div class="founded">Найдено: 3</div>
         <div class="sort">
-          <h2>Сортировка:</h2>
-          <ul>
+          <h2 class="sort-heading">Сортировка:</h2>
+          <ul class="sort-links">
             <li>
               <a class="sort-button-text sort-button-text-active" href="sort-by-price.html">По цене</a>
             </li>
@@ -105,6 +105,8 @@
             <li>
               <a class="sort-button-text" href="sort-by-rating.html">По рейтингу</a>
             </li>
+          </ul>
+          <ul class="sort-buttons">
             <li>
               <button class="sort-button-triangle" type="button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
@@ -130,17 +132,13 @@
             </div>
             <div class="selected-hotels-info">
               <h2><a href="#">Amara Resort & Spa</a></h2>
-              <div class="selected-hotels-type-price">
-                <p>Гостиница</p>
-                <p>От 4000 Р.</p>
+              <div class="selected-hotels-type-price-flex">
+                <p class="selected-hotels-type">Гостиница</p>
+                <p class="selected-hotels-price">От 4000 Р.</p>
               </div>
-              <div class="selected-hotels-buttons">
-                <div class="button-about">
-                  <a href="#">Подробнее</a>
-                </div>
-                <div class="button-book">
-                  <a href="#">Забронировать</a>
-                </div>
+              <div class="selected-hotels-buttons-flex">
+                <a class="selected-hotels-buttons button-about" href="#">Подробнее</a>
+                <a class="selected-hotels-buttons button-book" href="#">Забронировать</a>
               </div>
             </div>
             <div class="selected-hotels-rating">
@@ -150,9 +148,7 @@
                 <img src="img/star.svg" width="18px" height="17px" alt="звезда">
                 <img src="img/star.svg" width="18px" height="17px" alt="звезда">
               </p>
-              <div class="rating-plate">
-                <p>Рейтинг: 8,5</p>
-              </div>
+              <p class="rating-plate">Рейтинг: 8,5</p>
             </div>
           </li>
           <li>
@@ -161,17 +157,13 @@
             </div>
             <div class="selected-hotels-info">
               <h2><a href="#">Desert Quail Inn</a></h2>
-              <div class="selected-hotels-type-price">
-                <p>Мотель</p>
-                <p>От 3000 Р.</p>
+              <div class="selected-hotels-type-price-flex">
+                <p class="selected-hotels-type">Мотель</p>
+                <p class="selected-hotels-price">От 3000 Р.</p>
               </div>
-              <div class="selected-hotels-buttons">
-                <div class="button-about">
-                  <a href="#">Подробнее</a>
-                </div>
-                <div class="button-book">
-                  <a href="#">Забронировать</a>
-                </div>
+              <div class="selected-hotels-buttons-flex">
+                <a class="selected-hotels-buttons button-about" href="#">Подробнее</a>
+                <a class="selected-hotels-buttons button-book" href="#">Забронировать</a>
               </div>
             </div>
             <div class="selected-hotels-rating">
@@ -180,9 +172,7 @@
                 <img src="img/star.svg" width="18px" height="17px" alt="звезда">
                 <img src="img/star.svg" width="18px" height="17px" alt="звезда">
               </p>
-              <div class="rating-plate">
-                <p>Рейтинг: 8,9</p>
-              </div>
+              <p class="rating-plate">Рейтинг: 8,9</p>
             </div>
           </li>
           <li>
@@ -191,17 +181,13 @@
             </div>
             <div class="selected-hotels-info">
               <h2><a href="#">Villas at Poco Diablo</a></h2>
-              <div class="selected-hotels-type-price">
-                <p>Апартаменты</p>
-                <p>От 2000 Р.</p>
+              <div class="selected-hotels-type-price-flex">
+                <p class="selected-hotels-type">Апартаменты</p>
+                <p class="selected-hotels-price">От 2000 Р.</p>
               </div>
-              <div class="selected-hotels-buttons">
-                <div class="button-about">
-                  <a href="#">Подробнее</a>
-                </div>
-                <div class="button-book">
-                  <a href="#">Забронировать</a>
-                </div>
+              <div class="selected-hotels-buttons-flex">
+                <a class="selected-hotels-buttons button-about" href="#">Подробнее</a>
+                <a class="selected-hotels-buttons button-book" href="#">Забронировать</a>
               </div>
             </div>
             <div class="selected-hotels-rating">
@@ -209,40 +195,34 @@
                 <img src="img/star.svg" width="18px" height="17px" alt="звезда">
                 <img src="img/star.svg" width="18px" height="17px" alt="звезда">
               </p>
-              <div class="rating-plate">
-                <p>Рейтинг: 9,2</p>
-              </div>
+              <p class="rating-plate">Рейтинг: 9,2</p>
             </div>
           </li>
         </ul>
       </section>
     </main>
     <footer class="footer-flex-hotel">
-      <div class="footer-block">
-        <p class="hashtag">#visitSEDONA</p>
-      </div>
-      <div class="footer-block">
-        <ul class="socials">
-          <li class="socials-icon">
-            <a href="http://twitter.com">
-              <img src="img/twitter.svg" width="17" height="15" alt="Седона в twitter">
-              <p class="visually-hidden">Седона в twitter</p>
-            </a>
-          </li>
-          <li class="socials-icon">
-            <a href="http://facebook.com">
-              <img src="img/fb-icon.svg" width="12" height="22" alt="Седона в facebook">
-              <p class="visually-hidden">Седона в facebook</p>
-            </a>
-          </li>
-          <li class="socials-icon">
-            <a href="http://youtube.com">
-              <img src="img/youtube.svg" width="20" height="16" alt="Седона в youtube">
-              <p class="visually-hidden">Седона в youtube</p>
-            </a>
-          </li>
-        </ul>
-      </div>
+      <p class="footer-block hashtag">#visitSEDONA</p>
+      <ul class="footer-block socials">
+        <li class="socials-icon">
+          <a href="http://twitter.com">
+            <img src="img/twitter.svg" width="17" height="15" alt="Седона в twitter">
+            <p class="visually-hidden">Седона в twitter</p>
+          </a>
+        </li>
+        <li class="socials-icon">
+          <a href="http://facebook.com">
+            <img src="img/fb-icon.svg" width="12" height="22" alt="Седона в facebook">
+            <p class="visually-hidden">Седона в facebook</p>
+          </a>
+        </li>
+        <li class="socials-icon">
+          <a href="http://youtube.com">
+            <img src="img/youtube.svg" width="20" height="16" alt="Седона в youtube">
+            <p class="visually-hidden">Седона в youtube</p>
+          </a>
+        </li>
+      </ul>
       <div class="footer-block copyright">
         <p>Website by</p>
         <a href="https://htmlacademy.ru/intensive/htmlcss">
