@@ -34,7 +34,7 @@
       <section>
         <h1 class="visually-hidden">Страница выбора жилья</h1>
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset>
+          <fieldset class="filter-form-fieldset">
             <legend>Инфраструктура:</legend>
             <ul>
               <li>
@@ -51,7 +51,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="filter-form-fieldset">
             <legend>Тип жилья:</legend>
             <ul>
               <li>
@@ -71,23 +71,21 @@
           <div class="double-selector">
             <p>Стоимость в сутки (Р):</p>
             <div class="price-selector">
-              <div class="price-selector-price">
-                <p>от 0</p>
+              <label class="min-price">от
+                <input type="text" name="min-price" value="0">
+              </label>
+              <label class="max-price">до
+                <input type="text" name="max-price" value="3000">
+              </label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
               </div>
-              <div class="divider"></div>
-              <div class="price-selector-price">
-                <p>До 3000</p>
-              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
             </div>
-            <div class="slider">
-              <img src="img/filter-button.svg" alt="Бегунок">
-              <div class="active-line"></div>
-              <img src="img/filter-button.svg" alt="Бегунок">
-              <div class="passive-line"></div>
-            </div>
-            <div class="button-wrapper">
-              <button type="submit">Показать</button>
-            </div>
+            <button class="button-wrapper" type="submit">Показать</button>
           </div>
         </form>
       </section>

@@ -264,7 +264,7 @@ img {
   align-items: flex-start;
   color: #ffffff;
   padding-left: 72px;
-  padding-right: 76px;
+  padding-right: 72px;
   padding-top: 30px;
   box-sizing: border-box;
   background-image: url(../img/filter-background.jpg);
@@ -273,7 +273,7 @@ img {
   background-color: #ffffff;
 }
 
-.filter-form fieldset {
+.filter-form-fieldset {
   border: none;
   margin-inline-start: 0;
   margin-inline-end: 0;
@@ -287,38 +287,35 @@ img {
   padding-left: 0;
 }
 
-.filter-form fieldset:nth-child(2) {
-  margin-left: 116px;
+.filter-form-fieldset:nth-child(2) {
+  margin-left: 118px;
 }
 
-.filter-form fieldset legend {
+.filter-form-fieldset legend {
   margin-bottom: 23px;
   font-weight: bold;
   font-size: 16px;
 }
 
-.filter-form fieldset ul {
+.filter-form-fieldset ul {
   margin-block-start: 0;
   margin-block-end: 0;
   padding-inline-start: 0;
-}
-
-.filter-form ul {
   list-style: none;
 }
 
-.filter-form input {
+.filter-form-fieldset input {
   display: none;
 }
 
-.filter-form label {
+.filter-form-fieldset label {
   display: flex;
   margin-bottom: 23px;
   font-size: 14px;
   align-items: center;
 }
 
-.filter-form label::before {
+.filter-form-fieldset label::before {
   content: url(../img/checkbox-off.svg);
   display: inline-block;
   width: 27px;
@@ -326,87 +323,123 @@ img {
   margin-right: 13px;
 }
 
-.filter-form input:checked + label::before {
+.filter-form-fieldset input:checked + label::before {
   content: url(../img/checkbox-on.svg);
 }
 
 .double-selector {
-  width: 314px;
+  width: 316px;
   margin-left: auto;
 }
 
 .double-selector p {
   margin-block-start: 0;
   margin-block-end: 0;
-}
-
-.double-selector > p {
+  margin-bottom: 6px;
   font-size: 16px;
   font-weight: bold;
-  margin-bottom: 13px;
+  line-height: 21px;
 }
 
 .price-selector {
-  width: 314px;
-  display: flex;
+  height: 32px;
+  margin-bottom: 20px;
   border: 2px solid #ffffff;
-  border-radius: 5px;
-  align-items: center;
+  border-radius: 2px;
+  font-size: 0;
+  position: relative;
 }
 
-.price-selector-price {
-  width: 156px;
-  min-height: 32px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.divider {
+.price-selector::after {
+  content: "";
+  position: absolute;
+  width: 2px;
   height: 22px;
-  border: 1px solid #ffffff;
+  background: #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.active-line {
-  width: 232px;
-  border: 1px solid #ffffff;
+.price-selector label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 32px;
+  vertical-align: top;
+  cursor: pointer;
 }
 
-.passive-line {
-  width: 44px;
-  border: 1px solid rgba(255, 255, 255, 0.3)
+.price-selector .min-price,
+.price-selector .max-price {
+  width: 90px;
+  padding-left: 65px;
 }
 
-.slider {
-  display: flex;
-  align-items: center;
-  min-height: 22px;
-  margin-top: 13px;
+.price-selector input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range-toggle {
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+  position: absolute;
+  top: -9px;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
 }
 
 .button-wrapper {
-  width: 314px;
-  min-height: 32px;
-  display: flex;
-  justify-content: center;
-}
-
-.double-selector button {
-  border: 2px solid #ffffff;
-  border-radius: 5px;
-  background-color: transparent;
-  width: 133px;
-  min-height: 32px;
-  color: #ffffff;
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
   font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
   text-transform: uppercase;
-  margin-top: 23px;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
 }
 
-.double-selector button:hover,
-.double-selector button:focus {
+.button-wrapper:hover,
+.button-wrapper:focus {
   background-color: #ffffff;
   color: #000000;
 }
