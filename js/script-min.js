@@ -1,0 +1,1 @@
+var hideForm=document.querySelector(".order-form-inner");hideForm.classList.toggle("visually-hidden");var link=document.querySelector(".form-hide");link.addEventListener("click",function(e){e.preventDefault(),document.querySelector(".order-form-inner").classList.toggle("visually-hidden")});
