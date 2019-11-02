@@ -730,6 +730,7 @@ img {
   min-height: 291px;
   background-color: #ffffff;
   padding-top: 54px;
+  position: relative;
 }
 
 .booking-heading {
@@ -788,7 +789,6 @@ img {
 }
 
 .map img {
-  position: absolute;
   left: 0;
   top: 0;
 }
