@@ -34,8 +34,10 @@ img {
   position: absolute;
   left: 0;
   right: 0;
+  top: 0;
   margin: 0 auto;
   width: 140px;
+  z-index: 1;
 }
 
 .navigation {
@@ -97,6 +99,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
   padding-top: 76px;
   background-image: url(../img/background-photo.jpg);
   background-repeat: no-repeat;
@@ -112,9 +115,15 @@ img {
   background-repeat: no-repeat;
   background-position: 0px 100%;
   display: block;
-  padding-top: 21px;
   height: 59px;
   width: 1200px;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.welcome img {
+  margin-bottom: 79px;
 }
 
 .features-intro {
@@ -154,8 +163,8 @@ img {
   font-weight: bold;
   color: #000000;
   margin-bottom: 21px;
-  padding-left: 75px;
-  padding-right: 75px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .features-heading-alternate {
@@ -217,7 +226,6 @@ img {
   line-height: 21px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   box-sizing: border-box;
   padding-top: 49px;
   padding-bottom: 60px;
@@ -225,6 +233,11 @@ img {
   padding-right: 48px;
   background-color: #eeeeee;
   text-align: center;
+}
+
+.feature-bottom {
+  padding-left: 69px;
+  padding-right: 69px;
 }
 
 .optional {
@@ -271,7 +284,7 @@ img {
   background-image: url(../img/filter-background.jpg);
   background-repeat: no-repeat;
   background-position: 0px -297px;
-  background-color: #d1ecfa;
+  background-color: #32556d;
 }
 
 .filter-form-fieldset {
@@ -334,6 +347,14 @@ img {
 
 .filter-form-input:checked + label::before {
   content: url(../img/checkbox-on.svg);
+}
+
+.filter-form-input:checked:disabled + label::before {
+  content: url(../img/checkbox-on-dis.svg);
+}
+
+.filter-form-input:disabled + label::before {
+  content: url(../img/checkbox-off-dis.svg);
 }
 
 .filter-form-input:focus ~ label::before {
@@ -753,15 +774,6 @@ img {
   margin-bottom: 43px;
 }
 
-.map-form-hide-wrapper {
-  overflow: hidden;
-}
-
-.form-hide-wrapper {
-  position: relative;
-  min-height: 86px;
-}
-
 .form-hide {
   margin: 0 auto;
   display: flex;
@@ -789,6 +801,7 @@ img {
 }
 
 .map img {
+  position: absolute;
   left: 0;
   top: 0;
 }
@@ -872,12 +885,20 @@ img {
   width: 65px;
 }
 
+.booking-date-calendar-wrapper {
+  position: relative;
+}
+
 .booking-date {
-  width: 316px;
+  width: 346px;
   min-height: 38px;
   background-color: #f2f2f2;
   border: 0px;
   padding: 0;
+  padding-left: 13px;
+  padding-right: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
@@ -891,6 +912,8 @@ img {
 
 .booking-date:focus {
   background-color: #ffffff;
+  outline: 0;
+  box-shadow: inset 0 0 0 2px #e5e5e5;
 }
 
 .persons-qty {
@@ -905,14 +928,15 @@ img {
 }
 
 .calendar {
-  width: 30px;
+  width: 38px;
   min-height: 38px;
   padding: 0;
   border: none;
   fill: #cacaca;
-  background-color: #f2f2f2;
-  display: flex;
-  align-items: center;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .increase,
